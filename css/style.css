@@ -15,3 +15,7 @@
 header .search {
   max-width: 500px;
 }
+
+small {
+  font-size: 16px;
+}
