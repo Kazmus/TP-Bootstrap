@@ -1,4 +1,17 @@
-/* Color only */
-.orangeTextColor {
-  color: orange;
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.presentation {
+  height: 50vh;
+}
+
+header .search {
+  max-width: 500px;
 }
