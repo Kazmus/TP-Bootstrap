@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super-Fit</title>
+    <title>Super-Fit | Salle de sport low-cost à Bruxelles — Ouvert 24h/24</title>
+    <meta name="description" content="Super-Fit, votre salle de sport accessible en Belgique. Abonnements à partir de 34,98€/4 semaines, ouvert 24h/24 et 7j/7, sans engagement. Personal Training, cours collectifs et plus." />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,10 +24,10 @@
     ></script>
   </head>
   <body class="d-flex flex-column justify-content-center">
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-lg bg-dark py-3">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark py-3 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-warning" href="index.html">Super-Fit</a>
+        <a class="navbar-brand text-warning" href="index.html" title="Page d'Accueil">Super-Fit</a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -41,18 +42,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="services.html">Services</a>
+              <a class="nav-link text-white" href="services.html" title="Page Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="tarifs.html">Tarifs</a>
+              <a class="nav-link text-white" href="tarifs.html" title="Page Tarifs">Tarifs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="apropos.html">À propos</a>
+              <a class="nav-link text-white" href="apropos.html" title="Page A Propos">À propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
+              <a class="nav-link text-white" href="contact.html" title="Page Contact">Contact</a>
             </li>
           </ul>
+          <a
+              role="button"
+              class="btn btn-warning btn-lg"
+              href="inscription.html"
+              title="Page d'Inscription"
+            >
+              S'INSCRIRE
+            </a>
         </div>
       </div>
     </nav>
@@ -60,8 +69,9 @@
     <header class="hero position-relative overflow-hidden">
       <img
         src="images/hero.avif"
-        alt=""
+        alt="Une membre soulève une barre d'haltères debout"
         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        title="Une membre soulève une barre d'haltères debout"
       />
       <!-- dark overlay -->
       <div
@@ -96,9 +106,52 @@
     </header>
     <!-- Main -->
     <main>
-      <!-- Abbonements -->
-      <div class="container py-3 mt-4">
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <!-- Présentation  -->
+      <div class="container my-4 d-flex flex-column align-items-center">
+        <p class="text-center">Super-Fit est une salles de sport low-cost fondée en Belgique en 2025, 
+          Concept Super-Fit propose un accès à des équipements de fitness modernes à des tarifs 
+          accessibles, à partir de quelques euros par mois. L'enseigne mise sur un club 
+          ouvert 24h/24 et 7j/7, sans engagement obligatoire
+        </p>
+      </div>
+      <!-- Services -->
+      <div class="container d-flex flex-lg-row flex-column gap-4">
+        <div class="serviceCard h-100 d-flex flex-column">
+          <div class="bg-dark w-100 p-2">
+            <h2 class="m-0 text-light text-center ">Personal Training Intro</h2>
+          </div>
+          <div>
+            <img class="w-100 h-100 object-fit-cover" src="images/PersonalTrainingIntro.jpeg" 
+            alt="Séance avec un coach certifié Super-Fit"
+            title="Séance avec un coach certifié Super-Fit">
+          </div>
+        </div>
+        <div class="serviceCard h-100 d-flex flex-column">
+          <div class="bg-dark w-100 p-2">
+            <h2 class="m-0 text-light text-center">Personal Training</h2>
+          </div>
+          <div>
+            <img class="w-100 h-100 object-fit-cover" src="images/PersonalTraining.jpg" 
+            alt="Personal Training personnalisé dans une salle"
+            title="Personal Training personnalisé dans une salle">
+          </div>
+        </div>
+        <div class="serviceCard h-100 d-flex flex-column">
+          <div class="bg-dark w-100 p-2">
+            <h2 class="m-0 text-light text-center">Physio</h2>
+          </div>
+          <div>
+            <img class="w-100 h-100 object-fit-cover" src="images/Physio.jpg" 
+            alt="Un physio s'occupe d'une membre"
+            title="Séance de physiothérapie">
+          </div>
+        </div>
+      </div>
+      <!-- Tarifs -->
+      <div class="container py-3">
+        <hr class="featurette-divider" />
+        <p class="text-center">Annulez n'importe quand avec préavis de 4 semaines</p>
+        <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center">
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
@@ -365,9 +418,10 @@
       </div>
       <!-- Témoignages -->
       <div class="container marketing mt-4">
+        <hr class="featurette-divider" />
         <!-- START THE FEATURETTES -->
-        <div class="row featurette">
-          <div class="col-md-7">
+        <div class="row featurette mt-4">
+          <div class="col-lg-7">
             <h2 class="featurette-heading fw-normal lh-1">
               Aurélie Van Daelen
               <span class="text-warning">Plus forts ensemble</span>
@@ -386,13 +440,15 @@
               attentifs les uns aux autres pendant le sport.
             </p>
           </div>
-          <div class="col-md-5">
-            <img class="w-100" src="images/Aurelie.webp" alt="" />
+          <div class="col-lg-5">
+            <img class="w-100" src="images/Aurelie.webp" 
+            alt="Aurélie Van Daelen" 
+            title="Aurélie Van Daelen, membre Super-Fit — témoignage positivité corporelle"/>
           </div>
         </div>
         <hr class="featurette-divider" />
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
+          <div class="col-lg-7 order-lg-2">
             <h2 class="featurette-heading fw-normal lh-1">
               Elsa Auber
               <span class="text-warning">Plus forts ensemble</span>
@@ -406,13 +462,15 @@
               motive à continuer, jour après jour.✨💪🏼
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <img class="w-100" src="images/Elsa.jpg" alt="" />
+          <div class="col-lg-5 order-lg-1">
+            <img class="w-100" src="images/Elsa.jpg" 
+            alt="Elsa Auber" 
+            title="Elsa Auber, membre Super-Fit — témoignage entraînement quotidien"/>
           </div>
         </div>
         <hr class="featurette-divider" />
         <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-lg-7">
             <h2 class="featurette-heading fw-normal lh-1">
               Rubén Correia
               <span class="text-warning">Plus forts ensemble</span>
@@ -432,11 +490,12 @@
               autres.
             </p>
           </div>
-          <div class="col-md-5">
-            <img class="w-100" src="images/Ruben.jpg" alt="" />
+          <div class="col-lg-5">
+            <img class="w-100" src="images/Ruben.jpg" 
+            alt="Rubén Correia" 
+            title="Rubén Correia, membre Super-Fit — témoignage persévérance et sport"/>
           </div>
         </div>
-        <!-- /END THE FEATURETTES -->
       </div>
     </main>
     <!-- Footer -->
@@ -444,40 +503,31 @@
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <p class="col-md-4 mb-0 text-body-secondary">© 2026 Super-Fit</p>
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          aria-label="Bootstrap"
-        >
-          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <ul class="nav col-md-4 justify-content-end">
+        <p class="col-lg-4 mb-0 text-body-secondary">© 2026 Super-Fit</p>
+        <ul class="nav col-lg-4 justify-content-end">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2 text-body-secondary"
-              >Home</a
+              title="Page d'Accueil">Home</a
             >
           </li>
           <li class="nav-item">
             <a href="services.html" class="nav-link px-2 text-body-secondary"
-              >Services</a
+              title="Page Services">Services</a
             >
           </li>
           <li class="nav-item">
             <a href="tarifs.html" class="nav-link px-2 text-body-secondary"
-              >Tarifs</a
+              title="Page Tarifs">Tarifs</a
             >
           </li>
           <li class="nav-item">
             <a href="apropos.html" class="nav-link px-2 text-body-secondary"
-              >À propos</a
+              title="Page À propos">À propos</a
             >
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link px-2 text-body-secondary"
-              >Contact</a
+              title="Page Contact">Contact</a
             >
           </li>
         </ul>

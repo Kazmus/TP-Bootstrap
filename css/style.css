@@ -4,18 +4,21 @@
   font-style: normal;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
 .hero {
-  height: 100vh;
+  height: 60vh;
 }
 
-.presentation {
-  height: 50vh;
-}
-
-header .search {
-  max-width: 500px;
+@media (min-width: 992px) {
+  .hero {
+    height: 100vh;
+  }
 }
 
 small {
   font-size: 16px;
 }
+

@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>Services | Super-Fit — Personal Training, Physio à Bruxelles</title>
+    <meta name="description" content="Découvrez tous les services du club Super-Fit : Personal Training Intro, Personal Training, Physiothérapie, Yanga Sports Water, accessoires et fauteuils massants. Disponibles à Saint-Gilles, Bruxelles." />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,9 +25,9 @@
   </head>
   <body>
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg bg-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark py-3 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-warning" href="index.html">Super-Fit</a>
+        <a class="navbar-brand text-warning" href="index.html" title="Page d'Accueil">Super-Fit</a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -41,60 +42,225 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="services.html">Services</a>
+              <a class="nav-link text-white" href="services.html" title="Page Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="tarifs.html">Tarifs</a>
+              <a class="nav-link text-white" href="tarifs.html" title="Page Tarifs">Tarifs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="apropos.html">À propos</a>
+              <a class="nav-link text-white" href="apropos.html" title="Page A Propos">À propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
+              <a class="nav-link text-white" href="contact.html" title="Page Contact">Contact</a>
             </li>
           </ul>
+          <a
+              role="button"
+              class="btn btn-warning btn-lg"
+              href="inscription.html"
+              title="Page d'Inscription"
+            >
+              S'INSCRIRE
+            </a>
         </div>
       </div>
     </nav>
+    <main>
+      <div class="container">
+        <h1 class="text-center my-5">Services en club</h1>
+        <div class="row row-cols-lg-3 g-3">
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center ">Personal Training Intro</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/PersonalTrainingIntro.jpeg" 
+                alt="Séance avec un coach certifié Super-Fit"
+                title="Séance avec un coach certifié Super-Fit">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0">L'option 'Personal Training Intro’ 
+                  pendant 60 minutes où vous serez aidé(e) par un Personal Trainer certifié. 
+                  Cela vous aidera à atteindre votre objectif et, grâce à ses connaissances, 
+                  vous augmenterez le plaisir de votre entraînement, obtiendrez des résultats 
+                  plus rapidement et réduirez le risque de blessures.</p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center">Personal Training</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/PersonalTraining.jpg" 
+                alt="Personal Training personnalisé dans une salle"
+                title="Personal Training personnalisé dans une salle">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0">Vous avez un objectif en 
+                  tête et avez besoin d'aide et de conseils pour l'atteindre ? Contactez 
+                  un(e) Personal Trainer de votre club. Utilisez la barre de recherche 
+                  ci-dessus pour découvrir les différents profils et trouver la meilleure 
+                  adéquation en fonction de vos préférences et de vos objectifs. 
+                  Ils/elles ont chacun(e) leur spécialité et leur façon de travailler et, 
+                  surtout, ce sont tous des Personal Trainers certifié(e)s.</p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center">Physio</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/Physio.jpg" 
+                alt="Un physio s'occupe d'une membre"
+                title="Séance de physiothérapie">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0">Vous ressentez des douleurs ou 
+                  vous vous remettez d'une blessure ? Dans la mesure du possible, 
+                  nous offrons la possibilité à un physiothérapeute de la région de 
+                  travailler dans un club Super-Fit et de vous aider. 
+                  Vérifiez les disponibilités dans votre ville à l'aide de la barre 
+                  de recherche ci-dessus.</p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center">Yanga Sports Water</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/YangaSportsWater.jpg" 
+                alt="Une membre rempli sa bouteille de Yanga Sports Water"
+                title="Yanga Sports Water — boisson sans sucre enrichie en vitamines disponible en club">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0">Améliore ton entraînement avec 
+                  Yanga Sports Water. Une boisson aromatisée sans sucre, enrichie en vitamines, 
+                  disponible directement en club.</p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center">Accessoires</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/Gel.jpg" 
+                alt="Vestiaire avec machines d'accessoires"
+                title="Accessoires de sport disponibles en distributeur automatique au club Super-Fit">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0">Un(e) athlète a besoin 
+                  d'un bon matériel pour s'entraîner, 
+                  et peut-être d'une formule de récupération après ... 
+                  Super-Fit le comprend et met à disposition de nombreux produits 
+                  dans les distributeurs automatiques du club : de la corde à sauter 
+                  aux élastiques ou même un cadenas au cas où vous auriez oublié le vôtre. 
+                  </p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="serviceCard h-100 d-flex flex-column">
+              <div class="bg-dark w-100 p-2">
+                <h2 class="m-0 text-light text-center">Fauteuils massants</h2>
+              </div>
+              <div>
+                <img class="w-100 h-100 object-fit-cover" src="images/Fauteuil.jpg" 
+                alt="Deux membres sur deux fauteuil massant"
+                title="Fauteuil massant disponible pour la récupération après l'entraînement chez Super-Fit">
+              </div>
+              <div class="bg-dark flex-grow-1">
+                <p class="text-light text-center p-2 m-0 ">Vous avez besoin de vous ressourcer 
+                  pour pouvoir donner le meilleur de vous-même pendant votre entraînement ? 
+                  Ou, après une séance de cardio ou de musculation intense, de laisser votre 
+                  corps récupérer ? C'est possible ! Car à partir de maintenant, vous trouverez 
+                  les nouveaux fauteuils de massage dans notre club.</p>
+              </div>
+              <button
+              type="button"
+              class="btn btn-warning btn-lg rounded-0"
+              href="services.html"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
     <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <p class="col-md-4 mb-0 text-body-secondary">© 2026 Super-Fit</p>
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          aria-label="Bootstrap"
-        >
-          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <ul class="nav col-md-4 justify-content-end">
+        <p class="col-lg-4 mb-0 text-body-secondary">© 2026 Super-Fit</p>
+        <ul class="nav col-lg-4 justify-content-end">
           <li class="nav-item">
             <a href="index.html" class="nav-link px-2 text-body-secondary"
-              >Home</a
+              title="Page Accueil">Home</a
             >
           </li>
           <li class="nav-item">
             <a href="services.html" class="nav-link px-2 text-body-secondary"
-              >Services</a
+              title="Page Services">Services</a
             >
           </li>
           <li class="nav-item">
             <a href="tarifs.html" class="nav-link px-2 text-body-secondary"
-              >Tarifs</a
+              title="Page Tarifs">Tarifs</a
             >
           </li>
           <li class="nav-item">
             <a href="apropos.html" class="nav-link px-2 text-body-secondary"
-              >À propos</a
+              title="Page À propos">À propos</a
             >
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link px-2 text-body-secondary"
-              >Contact</a
+              title="Page Contact">Contact</a
             >
           </li>
         </ul>
