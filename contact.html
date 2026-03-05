@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Super-Fit — Salle de sport à Bruxelles</title>
-    <meta name="description" content="Contactez le club Super-Fit à Saint-Gilles (Bruxelles). Posez vos questions sur nos abonnements, le personal training ou les cours collectifs. Rue Franz Gailliard 2, 1060 Saint-Gilles." />
+    <meta
+      name="description"
+      content="Contactez le club Super-Fit à Saint-Gilles (Bruxelles). Posez vos questions sur nos abonnements, le personal training ou les cours collectifs. Rue Franz Gailliard 2, 1060 Saint-Gilles."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,12 +25,22 @@
       src="https://kit.fontawesome.com/4f2db7e18d.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg bg-dark py-3 sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-warning" href="index.html" title="Page d'Accueil">Super-Fit</a>
+      <div class="container">
+        <a
+          class="navbar-brand text-warning"
+          href="index.html"
+          title="Page d'Accueil"
+          >Super-Fit</a
+        >
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -42,26 +55,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="services.html" title="Page Services">Services</a>
+              <a
+                class="nav-link text-white"
+                href="services.html"
+                title="Page Services"
+                >Services</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="tarifs.html" title="Page Tarifs">Tarifs</a>
+              <a
+                class="nav-link text-white"
+                href="tarifs.html"
+                title="Page Tarifs"
+                >Tarifs</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="apropos.html" title="Page A Propos">À propos</a>
+              <a
+                class="nav-link text-white"
+                href="apropos.html"
+                title="Page A Propos"
+                >À propos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html" title="Page Contact">Contact</a>
+              <a
+                class="nav-link text-white"
+                href="contact.html"
+                title="Page Contact"
+                >Contact</a
+              >
             </li>
           </ul>
           <a
-              role="button"
-              class="btn btn-warning btn-lg"
-              href="inscription.html"
-              title="Page d'Inscription"
-            >
-              S'INSCRIRE
-            </a>
+            role="button"
+            class="btn btn-warning btn-lg"
+            href="inscription.html"
+            title="Page d'Inscription"
+          >
+            S'INSCRIRE
+          </a>
         </div>
       </div>
     </nav>
@@ -70,28 +103,49 @@
       <div class="container">
         <div class="text-center my-5">
           <h1>On est là pour vous aider</h1>
-          <p>Une question, une demande d'information ou envie de rejoindre le club ? Écrivez-nous !</p>
+          <p>
+            Une question, une demande d'information ou envie de rejoindre le
+            club ? Écrivez-nous !
+          </p>
         </div>
         <div class="row g-4">
           <!-- Formulaire -->
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm rounded-3 p-4">
-              <h5 class="fw-bold mb-4">Envoyez-nous un message</h5>
+              <h2 class="fw-bold mb-4">Envoyez-nous un message</h2>
 
               <div class="mb-3">
-                <label for="nom" class="form-label">Nom complet <span class="text-danger">*</span></label>
-                <input type="text" class="form-control rounded-0" id="nom" required>
+                <label for="nom" class="form-label"
+                  >Nom complet <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  id="nom"
+                  required
+                />
               </div>
 
               <div class="mb-3">
-                <label for="email" class="form-label">Adresse email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control rounded-0" id="email" required>
+                <label for="email" class="form-label"
+                  >Adresse email <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="email"
+                  required
+                />
               </div>
 
               <div class="mb-3">
-                <label for="sujet" class="form-label">Sujet <span class="text-danger">*</span></label>
+                <label for="sujet" class="form-label"
+                  >Sujet <span class="text-danger">*</span></label
+                >
                 <select class="form-select rounded-0" id="sujet" required>
-                  <option value="" disabled selected>Choisissez un sujet</option>
+                  <option value="" disabled selected>
+                    Choisissez un sujet
+                  </option>
                   <option value="abonnement">Abonnement & tarifs</option>
                   <option value="coaching">Personal Training</option>
                   <option value="cours">Cours collectifs</option>
@@ -101,67 +155,82 @@
               </div>
 
               <div class="mb-4">
-                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                <textarea class="form-control rounded-0" id="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+                <label for="message" class="form-label"
+                  >Message <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control rounded-0"
+                  id="message"
+                  rows="5"
+                  placeholder="Décrivez votre demande..."
+                  required
+                ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-warning rounded-0 fw-bold w-100">Envoyer le message</button>
+              <button
+                type="submit"
+                class="btn btn-warning rounded-0 fw-bold w-100"
+              >
+                Envoyer le message
+              </button>
             </div>
           </div>
 
           <!-- Coordonnées + Carte -->
           <div class="col-lg-6 d-flex flex-column gap-4">
-
             <!-- Coordonnées -->
             <div class="card border-0 shadow-sm rounded-3 p-4">
-              <h5 class="fw-bold mb-3">Nos coordonnées</h5>
+              <h2 class="fw-bold mb-3">Nos coordonnées</h2>
 
               <ul class="list-unstyled mb-0">
                 <li class="mb-3 d-flex align-items-start gap-2">
                   <span class="fs-5">📍</span>
                   <div>
-                    <strong class="text-dark">Adresse</strong><br>
+                    <strong class="text-dark">Adresse</strong><br />
                     Rue Franz Gailliard 2, 1060 Saint-Gilles
                   </div>
                 </li>
                 <li class="mb-3 d-flex align-items-start gap-2">
                   <span class="fs-5">📞</span>
                   <div>
-                    <strong class="text-dark">Téléphone</strong><br>
+                    <strong class="text-dark">Téléphone</strong><br />
                     02 542 01 50
                   </div>
                 </li>
                 <li class="mb-3 d-flex align-items-start gap-2">
                   <span class="fs-5">✉️</span>
                   <div>
-                    <strong class="text-dark">Email</strong><br>
+                    <strong class="text-dark">Email</strong><br />
                     contact@superfit.be
                   </div>
                 </li>
                 <li class="d-flex align-items-start gap-2">
                   <span class="fs-5">🕐</span>
                   <div>
-                    <strong class="text-dark">Horaires d'accueil</strong><br>
-                    Lun – Ven : 9h00 – 20h00<br>
-                    Sam – Dim : 10h00 – 17h00<br>
-                    <small class="text-warning fw-bold">Club ouvert 24h/24 avec badge</small>
+                    <strong class="text-dark">Horaires d'accueil</strong><br />
+                    Lun – Ven : 9h00 – 20h00<br />
+                    Sam – Dim : 10h00 – 17h00<br />
+                    <small class="text-warning fw-bold"
+                      >Club ouvert 24h/24 avec badge</small
+                    >
                   </div>
                 </li>
               </ul>
             </div>
             <!-- Carte -->
-              <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.3336548898365!2d4.339131824003511!3d50.830131574484966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c468ff298aa9%3A0x140c81e4067a20bf!2sFij%20Asbl%20-%20Formation%20Insertion%20Jeunes!5e0!3m2!1sen!2sbe!4v1772665408199!5m2!1sen!2sbe"
-                  width="100%"
-                  height="240"
-                  style="border:0;"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Carte — Super-Fit, Rue Franz Gailliard 2, 1060 Saint-Gilles, Bruxelles">
-                </iframe>
-              </div>
+            <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.3336548898365!2d4.339131824003511!3d50.830131574484966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c468ff298aa9%3A0x140c81e4067a20bf!2sFij%20Asbl%20-%20Formation%20Insertion%20Jeunes!5e0!3m2!1sen!2sbe!4v1772665408199!5m2!1sen!2sbe"
+                width="768"
+                height="240"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Carte — Super-Fit, Rue Franz Gailliard 2, 1060 Saint-Gilles, Bruxelles"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -174,37 +243,47 @@
         <p class="col-md-4 mb-0 text-body-secondary">© 2026 Super-Fit</p>
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-body-secondary"
-              title="Page Accueil">Home</a
+            <a
+              href="index.html"
+              class="nav-link px-2 text-body-secondary"
+              title="Page Accueil"
+              >Home</a
             >
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link px-2 text-body-secondary"
-              title="Page Services">Services</a
+            <a
+              href="services.html"
+              class="nav-link px-2 text-body-secondary"
+              title="Page Services"
+              >Services</a
             >
           </li>
           <li class="nav-item">
-            <a href="tarifs.html" class="nav-link px-2 text-body-secondary"
-              title="Page Tarifs">Tarifs</a
+            <a
+              href="tarifs.html"
+              class="nav-link px-2 text-body-secondary"
+              title="Page Tarifs"
+              >Tarifs</a
             >
           </li>
           <li class="nav-item">
-            <a href="apropos.html" class="nav-link px-2 text-body-secondary"
-              title="Page À propos">À propos</a
+            <a
+              href="apropos.html"
+              class="nav-link px-2 text-body-secondary"
+              title="Page À propos"
+              >À propos</a
             >
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-body-secondary"
-              title="Page Contact">Contact</a
+            <a
+              href="contact.html"
+              class="nav-link px-2 text-body-secondary"
+              title="Page Contact"
+              >Contact</a
             >
           </li>
         </ul>
       </footer>
     </div>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
 </html>
